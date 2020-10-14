@@ -20,26 +20,6 @@ func main() {
 		panic("Client fail ")
 	}
 
-	//creating student object
-	//newStudent := model.Gene{
-	//	GeneId:         "Gopher doe",
-	//	GeneName:          "Testi",
-	//	Description: "Testing",
-	//}
-	//
-	//dataJSON, err := json.Marshal(newStudent)
-	//js := string(dataJSON)
-	//_, err = esclient.Index().
-	//	Index("gene").
-	//	BodyJson(js).
-	//	Do(ctx)
-	//
-	//if err != nil {
-	//	panic(err)
-	//}
-	//
-	//fmt.Println("[Elastic][InsertProduct]Insertion Successful")
-
 	var genes []model.Gene
 
 	searchSource := elastic.NewSearchSource()
